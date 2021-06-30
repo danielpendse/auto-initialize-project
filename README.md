@@ -1,5 +1,19 @@
-Auto Initalize Project automates the start of a new project using a shell script that creates a folder at the desired path and also creates a GIT repository and does the first commit. 
+Auto Initalize Project automates the start of a new project using a zsh script that creates a folder at the desired path and also creates a GIT repository and does the first commit. 
 
+# Installation
+- git clone git@github.com:danielpendse/auto-initialize-project.git
+- cd auto-initialize-project
+- chmod 0500 initialize.sh
+- touch .env
+- File in env file according to file format
 
-* How to use?
+# env file format
+GITHUB_API_TOKEN="your_api_token"
+FILEPATH="Your_project_file_path"
+GITUSERNAME="your_github_username"
 
+# How to use
+./initialize NewProjectFolderName
+
+The project opens up VSCode if alias is set to ```code . ``` 
+ 
